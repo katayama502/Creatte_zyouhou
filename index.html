@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【クリエット】漫画で学ぶ中学生向け情報講座 | 高校入試・共通テスト対策</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="bg-white border-b-4 border-black sticky top-0 z-50 p-3 md:p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-yellow-400 p-1 manga-border text-[10px] md:text-xs font-bold">クリエット</div>
+                <h1 class="text-lg md:text-xl font-extrabold tracking-tighter">こどもプログラミング教室</h1>
+            </div>
+            <a href="#apply" class="hidden sm:block bg-black text-white px-4 md:px-6 py-2 rounded-full font-bold hover:bg-gray-800 transition text-sm">
+                お申込み・詳細
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-8 md:py-12 px-4 halftone-bg overflow-hidden">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-8 md:gap-10">
+            <div class="flex-1 text-center lg:text-left z-10">
+                <div class="inline-block bg-white manga-border px-3 md:px-4 py-1 mb-4 rotate-[-2deg]">
+                    <span class="text-blue-600 font-extrabold text-sm md:text-base">中学生から始めて差をつけよう！</span>
+                </div>
+                <h2 class="text-3xl md:text-6xl font-black mb-4 md:mb-6 comic-text leading-tight">
+                    漫画で楽しく学習！<br>
+                    <span class="text-orange-500 text-4xl md:text-7xl">情報科目講座</span>
+                </h2>
+                <p class="text-base md:text-xl font-bold mb-6 md:mb-8 leading-relaxed">
+                    高校で「必修科目」！ 共通テストにも出題される「情報」。<br class="hidden md:block">
+                    難しい内容も、漫画形式の資料でスイスイ頭に入る！
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#apply" class="pop-gradient manga-border px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-black text-white rounded-lg hover:scale-105 transition-transform text-center relative overflow-hidden">
+                        <div class="shimmer absolute inset-0"></div>
+                        全8回コースをチェック
+                    </a>
+                    <a href="#experience" class="bg-white manga-border px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-black text-black rounded-lg hover:scale-105 transition-transform text-center">
+                        まずは体験！
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 relative w-full max-w-lg md:max-w-none">
+                <div class="manga-border bg-white rounded-2xl p-3 md:p-4 rotate-[2deg] float-anim overflow-hidden">
+                    <!-- 【画像挿入箇所 1: メインビジュアル（レスポンシブ切り替え可能）】 -->
+                    <div class="bg-gray-100 h-56 sm:h-80 md:h-96 rounded-xl flex items-center justify-center relative overflow-hidden">
+                        <!-- スマホ用画像 -->
+                        <img src="./img/top.main_sb.jpg" 
+                             alt="[漫画のメインイラスト スマホ用]" 
+                             class="block md:hidden w-full h-full object-cover">
+                        <!-- PC用画像 -->
+                        <img src="./img/top_main.jpg" 
+                             alt="[漫画のメインイラスト PC用]" 
+                             class="hidden md:block w-full h-full object-cover">
+                        <div class="absolute -top-4 -right-4 w-16 md:w-20 h-16 md:h-20 bg-yellow-300 rounded-full border-2 border-black -z-10"></div>
+                    </div>
+                </div>
+                <div class="absolute -top-4 -left-2 md:-top-6 md:-left-12 speech-bubble rotate-[-5deg] z-20 max-w-[140px] md:max-w-[200px]">
+                    <p class="font-bold text-xs md:text-sm">「情報」って難しい…？<br>漫画なら大丈夫！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-12 md:py-16 bg-white border-y-4 border-black">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl md:text-3xl font-black text-center mb-8 md:mb-12">選ばれる3つのポイント</h3>
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <div class="manga-border p-5 md:p-6 bg-yellow-50 rounded-xl hover:rotate-2 transition">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-yellow-400 border-2 border-black rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4">📖</div>
+                    <h4 class="text-lg md:text-xl font-black mb-2">漫画形式の資料</h4>
+                    <p class="font-bold text-gray-700 text-sm md:text-base">文字ばかりの教材はもう古い！漫画でストーリーを楽しみながら、自然とITリテラシーが身につきます。</p>
+                </div>
+                <div class="manga-border p-5 md:p-6 bg-blue-50 rounded-xl hover:rotate-[-2deg] transition">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-400 border-2 border-black rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4">🏫</div>
+                    <h4 class="text-lg md:text-xl font-black mb-2">高校必修化に対応</h4>
+                    <p class="font-bold text-gray-700 text-sm md:text-base">高校から始まる「情報I」の土台を構築。将来の共通テスト対策にも直結します。</p>
+                </div>
+                <div class="manga-border p-5 md:p-6 bg-green-50 rounded-xl hover:rotate-1 transition">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-green-400 border-2 border-black rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4">🚀</div>
+                    <h4 class="text-lg md:text-xl font-black mb-2">今から始めて有利に</h4>
+                    <p class="font-bold text-gray-700 text-sm md:text-base">プログラミングだけでなく、デジタル社会で生き抜く「情報の扱い方」を体系的に学びます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 md:py-16 bg-blue-50 halftone-bg">
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-block bg-blue-600 text-white font-black px-5 md:px-6 py-2 mb-6 manga-border rotate-[-1deg] text-xl md:text-2xl">
+                まずは体験！
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black mb-4">漫画資料を無料で公開中！</h3>
+            <p class="font-bold text-gray-700 mb-8 md:mb-10 max-w-2xl mx-auto text-sm md:text-base px-4">
+                実際の講座で使用する「漫画資料」を一部無料開放しています。<br class="hidden md:block">
+                まずは資料を読んで、情報の楽しさを体感してみよう！
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+                <!-- Manga Preview Card -->
+                <div class="bg-white manga-border p-4 rounded-xl flex flex-col items-center">
+                    <!-- 【画像挿入箇所 2: 漫画のサンプル画像（スマホ/PC切り替え可能）】 -->
+                    <div class="w-full aspect-[3/4] bg-gray-200 border-2 border-black rounded shadow-inner mb-4 flex items-center justify-center relative group overflow-hidden">
+                        <!-- スマホ用画像（1ページのみなど） -->
+                        <img src="./img/M_sb.jpg" 
+                             alt="[漫画サンプル スマホ用]" 
+                             class="block md:hidden w-full h-full object-cover">
+                        <!-- PC用画像（2ページ見開きなど） -->
+                        <img src="./img/M_sb.jpg" 
+                             alt="[漫画サンプル PC用]" 
+                             class="hidden md:block w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all flex items-center justify-center">
+                            <span class="bg-yellow-400 text-black px-4 py-2 font-black rounded-full border-2 border-black opacity-0 group-hover:opacity-100 transition-all transform scale-90 group-hover:scale-100 text-sm">チラ見せ中！</span>
+                        </div>
+                    </div>
+                    <a href="https://example.com/manga-sample" target="_blank" class="w-full pop-gradient manga-border py-3 md:py-4 text-white font-black rounded-lg text-lg md:text-xl hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                        <span>📚</span> 無料資料を読む
+                    </a>
+                </div>
+
+                <!-- Instagram/Social Card -->
+                <div class="bg-white manga-border p-6 md:p-8 rounded-xl flex flex-col justify-center">
+                    <h4 class="text-xl md:text-2xl font-black mb-3 md:mb-4">授業風景もチェック！</h4>
+                    <p class="font-bold text-gray-600 mb-4 md:mb-6 text-xs md:text-sm">
+                        Instagramでは実際の授業の様子や、最新の漫画カットを公開しています。教室の雰囲気を感じてみてください！
+                    </p>
+                    <div class="space-y-4">
+                        <!-- 【画像挿入箇所 3: Instagramプレビュー（スマホ/PC切り替え可能）】 -->
+                        <div class="aspect-video bg-pink-50 border-2 border-pink-500 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                             <img src="https://placehold.co/800x450?text=Instagram+Feed" 
+                                  alt="[授業風景の写真]" 
+                                  class="w-full h-full object-cover">
+                        </div>
+                        <a href="#" class="block bg-pink-50 border-2 border-pink-500 p-3 md:p-4 rounded-lg font-black text-pink-600 hover:bg-pink-100 transition text-center text-sm md:text-base">
+                            Instagramを見る
+                        </a>
+                        <!-- LINE Box -->
+                        <div class="p-3 md:p-4 bg-green-400 border-4 border-black rounded-xl shadow-[4px_4px_0px_#000] rotate-1">
+                            <p class="text-[10px] md:text-xs font-extrabold text-black mb-1 text-left bg-white inline-block px-2 border-2 border-black">LINEでのお問い合わせもOK!</p>
+                            <a href="#" class="block text-white text-base md:text-lg font-black hover:scale-105 transition-transform drop-shadow-[2px_2px_0px_rgba(0,0,0,0.5)]">
+                                公式LINEでお友だち登録 →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Info -->
+    <section id="apply" class="py-12 md:py-16 bg-orange-50 border-t-4 border-black">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-white manga-border p-6 md:p-8 rounded-2xl relative">
+                <div class="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-20 h-20 md:w-24 md:h-24 bg-yellow-400 rounded-full border-2 md:border-4 border-black flex items-center justify-center font-black rotate-12 z-10 text-center text-[10px] md:text-sm shadow-lg leading-tight">
+                    4名以上で<br>開催決定！
+                </div>
+                
+                <h3 class="text-2xl md:text-3xl font-black mb-6 md:mb-8 border-b-4 border-yellow-400 inline-block">全8回コース 講座詳細</h3>
+                
+                <div class="space-y-5 md:space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 border-b-2 border-dashed border-gray-300 pb-3 md:pb-4">
+                        <span class="w-full md:w-32 font-black text-orange-600 text-sm md:text-base">開講日程</span>
+                        <div class="font-bold text-base md:text-lg">
+                            <p>4月開始 / 毎週金曜日 19:00〜19:50</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 border-b-2 border-dashed border-gray-300 pb-3 md:pb-4">
+                        <span class="w-full md:w-32 font-black text-orange-600 text-sm md:text-base">受講料</span>
+                        <div class="font-bold text-xl md:text-2xl">
+                            33,000円 <span class="text-xs md:text-sm font-normal text-gray-500">（税込）</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 border-b-2 border-dashed border-gray-300 pb-3 md:pb-4">
+                        <span class="w-full md:w-32 font-black text-orange-600 text-sm md:text-base">実施場所</span>
+                        <div class="font-bold text-sm md:text-base">
+                            <p>島根県益田市あけぼの東町7-4 松岡ビル1階</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LINE CTA -->
+                <div class="mt-8 md:mt-10 p-5 md:p-6 bg-green-100 border-2 md:border-4 border-green-500 rounded-xl text-center">
+                    <p class="font-black text-green-700 mb-4 text-sm md:text-base">＼ 疑問・質問もこちらから！ ／</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-6">
+                        <!-- 【画像挿入箇所 4: LINE QRコード】 -->
+                        <div class="w-28 h-28 md:w-32 md:h-32 bg-white p-2 border-2 border-black">
+                             <img src="https://placehold.co/200x200?text=LINE+QR" 
+                                  alt="[公式LINEのQRコード]" 
+                                  class="w-full h-full">
+                        </div>
+                        <div class="text-center md:text-left">
+                            <p class="font-black text-base md:text-lg mb-2">お申込みは公式LINEから！</p>
+                            <a href="#" class="bg-[#06C755] text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-black text-lg md:text-xl flex items-center gap-2 hover:opacity-90 transition shadow-lg border-2 border-black">
+                                LINEでお申込み
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10 md:py-12 pb-24 md:pb-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-xl md:text-2xl font-black mb-3 uppercase tracking-widest">Greatte</h2>
+            <p class="text-gray-400 mb-6 md:mb-8 font-bold text-sm md:text-base">クリエット こどもプログラミング教室</p>
+            <div class="flex justify-center gap-4 md:gap-6 mb-8 text-xs md:text-sm">
+                <a href="#" class="hover:text-yellow-400 transition underline">Instagram</a>
+                <a href="#" class="hover:text-green-400 transition underline">LINE</a>
+                <a href="#" class="hover:text-blue-400 transition underline">Official Site</a>
+            </div>
+            <p class="text-[10px] md:text-xs text-gray-600">&copy; 2024 Greatte Information Course.</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA (Mobile Only) -->
+    <div class="fixed bottom-4 left-4 right-4 sm:hidden z-50 flex gap-2">
+        <a href="#experience" class="flex-1 bg-white border-2 border-black py-3 text-center text-black font-black rounded-full shadow-[4px_4px_0px_#000] text-xs">
+            まずは体験！
+        </a>
+        <a href="#apply" class="flex-[1.5] pop-gradient border-2 border-black py-3 text-center text-white font-black rounded-full shadow-[4px_4px_0px_#000] text-xs">
+            詳細・お申込み
+        </a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

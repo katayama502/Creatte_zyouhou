@@ -1,0 +1,88 @@
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #f0fdf4; /* 優しい緑系 */
+    color: #333;
+}
+
+/* 漫画風のスタイル */
+.manga-border {
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px #000;
+}
+@media (min-width: 768px) {
+    .manga-border {
+        box-shadow: 8px 8px 0px #000;
+    }
+}
+
+.speech-bubble {
+    position: relative;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    border-width: 20px 20px 0;
+    border-style: solid;
+    border-color: #000 transparent;
+    display: block;
+    width: 0;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 33px;
+    border-width: 17px 17px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+.pop-gradient {
+    background: linear-gradient(135deg, #FFD600 0%, #FF9900 100%);
+}
+
+.halftone-bg {
+    background-image: radial-gradient(#ccc 10%, transparent 10%);
+    background-size: 20px 20px;
+}
+
+.comic-text {
+    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 2px 2px 0px #000;
+}
+@media (min-width: 768px) {
+    .comic-text {
+        text-shadow: 2px 2px 0px #fff, -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff, 4px 4px 0px #000;
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-anim {
+    animation: float 3s ease-in-out infinite;
+}
+
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
